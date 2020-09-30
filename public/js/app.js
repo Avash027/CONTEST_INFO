@@ -13,13 +13,13 @@ form.addEventListener('submit' , (e)=>{
         else
         {
                 const cftable = document.querySelector('#codeforces')
-                var tempdata = '<p class="title is-1">CodeForces</p><a href="http://codeforces.com/" target="_blank">Checkout Codeforces</a><br><table class="table is-striped is-hoverable is-fullwidth"><tr><td>ID</td><td>Name</td><td>Date</td></tr>'
+                var tempdata = '<p class="title is-1">CodeForces</p><a href="http://codeforces.com/" target="_blank">Checkout Codeforces</a><br><table class="table is-striped is-hoverable is-fullwidth"><tr><td>ID</td><td>Name</td><td>Start</td><td>End</td></tr>'
                 data.map((e)=>{
                     if(e)
                     {
                         var mydate = new Date(e.startTimeSeconds*1000);
-                        
-                        tempdata += `<tr><td>${e.id}</td><td>${e.name}</td><td>${mydate.toGMTString()}</td></tr>`
+                        var mydate1 = new Date((e.startTimeSeconds + e.durationSeconds)*1000)
+                        tempdata += `<tr><td>${e.id}</td><td>${e.name}</td><td>${mydate.toGMTString()}</td><td>${mydate1.toGMTString()}</td></tr>`
                     }
                 })
                 cftable.innerHTML = tempdata+'</table><br>';
