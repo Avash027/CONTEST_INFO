@@ -1,0 +1,22 @@
+{
+  "name": "pupeeter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "get-urls": "^10.0.0",
+    "handlebars": "^4.7.6",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.4",
+    "puppeteer": "^5.2.1",
+    "request": "^2.88.2"
+  }
+}
