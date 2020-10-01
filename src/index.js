@@ -59,8 +59,10 @@ app.get('/query' , (req,res)=>{
   {
       //data contains the html form the contests list
     ccapi((data)=>{
+        console.log(data)
         if(data==='error') res.send({error:data});//error handling
         else res.send({data});
+        
     })
   }  
 })

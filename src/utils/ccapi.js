@@ -1,23 +1,22 @@
-const puppeteer = require('puppeteer')
+const cheerio = require('cheerio')
+const request = require('request')
 
-const ccapi = async (callback)=>{
+const ccapi =  (callback)=>{
 
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://www.codechef.com/contests');
+  request({url: 'https://www.codechef.com/contests'} , (err , res , html)=>{
+    if(err) callback('error')
+    else{
 
-    var contestList  = await page.$$eval('tbody' , (e)=>{
-        if(e[2])
-        return e[2].innerHTML;
-        else 
-        return 'error';
-    })
-    
-    callback(contestList)
-
-  await browser.close();
+      
+    const $  = cheerio.load(html)
+    const tabledata = $('#future-contests').next().find('tbody').html()
+      console.log(tabledata)
+    callback(tabledata)
+    }
+  })
 
 }
+ccapi((table)=>{})
 
 module.exports = ccapi
 
