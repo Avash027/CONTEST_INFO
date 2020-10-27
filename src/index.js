@@ -22,8 +22,12 @@ app.set("views", viewsPath);
 
 app.use(express.static(indexpath));
 
+
+app.get("",(req,res)=>{
+  res.render('main')
+})
 //This is the main page
-app.get("", (req, res) => {
+app.get("/index", (req, res) => {
   res.render("index"); //index.hbs is being shown
 });
 
@@ -64,6 +68,9 @@ app.get("/query", (req, res) => {
     });
   } else if (req.query.site === "codefordata") {
     cfdata(req.query.name, (rating, date) => {
+      if(rating.error==='error')
+      res.send({error:rating.error})
+      else
       res.send({ rating: rating, date: date });
     });
   }

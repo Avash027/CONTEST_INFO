@@ -4,7 +4,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   var codefbtn = document.querySelector("#codefbtn");
-  codefbtn.className = "button is-link is-loading";
+  codefbtn.className = "button is-link is-loading is-large";
 
   const fetchurl = "/query?site=codeforces";
 
@@ -27,7 +27,7 @@ form.addEventListener("submit", (e) => {
           }
         });
         cftable.innerHTML = tempdata + "</table><br>";
-        codefbtn.className = "button is-link";
+        codefbtn.className = "button is-link is-large";
       }
     });
   });
@@ -39,7 +39,7 @@ formc.addEventListener("submit", (e) => {
   e.preventDefault();
 
   var codecbtn = document.querySelector("#codecbtn");
-  codecbtn.className = "button is-warning is-loading";
+  codecbtn.className = "button is-warning is-loading is-large";
 
   const fetchurl = "/query?site=codechef";
 
@@ -52,7 +52,7 @@ formc.addEventListener("submit", (e) => {
         data.data = data.data.replace(/<a/g, "<ab");
         const d = `<p class="title is-1">CodeChef</p><a href="https://www.codechef.com/" target="_blank" >Checkout Codechef</a><br><table class="table is-striped is-hoverable is-fullwidth"><tr><td>ID</td><td>Name</td><td>START</td><td>END</td></tr>${data.data}</table>`;
         cctable.innerHTML = d;
-        codecbtn.className = "button is-warning";
+        codecbtn.className = "button is-warning is-large";
       }
     });
   });
