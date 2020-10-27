@@ -31,15 +31,6 @@ app.get("/index", (req, res) => {
   res.render("index"); //index.hbs is being shown
 });
 
-//about page
-app.get("/about", (req, res) => {
-  res.render("about");
-});
-
-//contact page
-app.get("/contact", (req, res) => {
-  res.send("<h1>Temp page 1</h1>");
-});
 
 app.get("/data", (req, res) => {
   res.render("data");
