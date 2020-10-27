@@ -10,7 +10,7 @@ const ccapi =  (callback)=>{
       
     const $  = cheerio.load(html)
     const tabledata = $('#future-contests').next().find('tbody').html()
-      console.log(tabledata)
+      
     callback(tabledata)
     }
   })

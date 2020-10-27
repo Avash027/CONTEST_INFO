@@ -12,11 +12,8 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
-    "get-urls": "^10.0.0",
-    "handlebars": "^4.7.6",
     "hbs": "^4.1.1",
     "nodemon": "^2.0.4",
-    "puppeteer": "^5.2.1",
     "request": "^2.88.2"
   }
 }
