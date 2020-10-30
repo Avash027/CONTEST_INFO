@@ -22,15 +22,13 @@ app.set("views", viewsPath);
 
 app.use(express.static(indexpath));
 
-
-app.get("",(req,res)=>{
-  res.render('main')
-})
+app.get("", (req, res) => {
+  res.render("main");
+});
 //This is the main page
 app.get("/index", (req, res) => {
   res.render("index"); //index.hbs is being shown
 });
-
 
 app.get("/data", (req, res) => {
   res.render("data");
@@ -59,15 +57,13 @@ app.get("/query", (req, res) => {
     });
   } else if (req.query.site === "codefordata") {
     cfdata(req.query.name, (rating, date) => {
-      if(rating.error==='error')
-      res.send({error:rating.error})
-      else
-      res.send({ rating: rating, date: date });
+      if (rating.error === "error") res.send({ error: rating.error });
+      else res.send({ rating: rating, date: date });
     });
   }
 });
 
 //starting the server
 app.listen(port, () => {
-  console.log("Listening to port " + port);
+  console.log("https://localhost:" + port);
 });

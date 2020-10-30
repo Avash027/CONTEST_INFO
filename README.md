@@ -1,6 +1,5 @@
 # CONTEST_INFO
 
-
 ### Website : https://contestinfo.herokuapp.com/
 
 ## Backened
@@ -16,4 +15,3 @@ Libraries/Frameworks : ExpressJS , Cheerio , request , hbs
 Programming Languages : Javascript , HTML (Handlebars)
 
 Libraries/Frameworks : BulmaCSS Framework
-
