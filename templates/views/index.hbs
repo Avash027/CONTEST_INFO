@@ -1,42 +1,66 @@
 <html>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <head>
-        <title>Contest Info!!</title>
-    </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+<style>
+  html {
+    height: 100%;
+  }
 
-    <body class="has-background-light is-family-sans-serif">
-<section class="hero is-dark is-medium is-bold">
-  <!-- Hero head: will stick at the top -->
-  <div class="hero-head">
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-          </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        
-      
-             </div>
-           </div>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  #content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  #footer {
+    padding: 20px;
+  }
+</style>
+
+<head>
+
+  <link rel="shortcut icon" href="./image/icon.ico" />
+  <title>Contest Info!!</title>
+</head>
+
+<body class="has-background-light is-family-sans-serif">
+  <div id="content">
+    <section class="hero is-dark is-medium is-bold">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+
+
           </div>
-        </div>
       </div>
-    </nav>
+  </div>
+  </div>
+  </div>
+  </nav>
   </div>
 
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title">
-        CONTEST_INFO
+
       </h1>
       <h2 class="subtitle">
-        All contests details at one place
+
       </h2>
     </div>
   </div>
@@ -50,43 +74,45 @@
       </div>
     </nav>
   </div>
-</section>
-        <br>
-        <br>
+  </section>
+  <br>
+  <br>
 
-        <form id="codef" align='center'>
+  <form id="codef" align='center'>
 
-            <button id="codefbtn" class="button is-link is-large">Codeforces</button>
+    <button id="codefbtn" class="button is-link is-large">Codeforces</button>
 
-        </form>
+  </form>
 
 
-        <form id="codec" align='center'>
+  <form id="codec" align='center'>
 
-            <button id="codecbtn" class="button is-warning is-large">CodeChef</button>
-            <br>
-            
-        </form>
-
-    <br>
+    <button id="codecbtn" class="button is-warning is-large">CodeChef</button>
     <br>
 
-    <div id="codeforces" align="center"></div>
-    <div id="codechef" align="center"></div>
+  </form>
 
-<br><br>
+  <br>
+  <br>
 
-    <footer class="hero is-dark is-bold">
-        <br>
-        <br>    
-        <center>
-            <p>Made by : Avash Mitra</p>
-            <p>Check out GITHUB repository of this project </p>
-            <a href="https://github.com/Avash027/CONTEST_INFO">HERE</a>
-        </center>
-    </footer>
+  <div id="codeforces" align="center"></div>
+  <div id="codechef" align="center"></div>
+
+  <br><br>
+
+  </div>
+  <footer class="hero is-dark is-bold" id="footer">
+    <br>
+    <br>
+    <center>
+      <p>Made by : Avash Mitra</p>
+      <p>Check out GITHUB repository of this project </p>
+      <a href="https://github.com/Avash027/CONTEST_INFO">HERE</a>
+    </center>
+  </footer>
 
 
-    </body>
-    <script src="/js/app.js"></script>
+</body>
+<script src="/js/app.js"></script>
+
 </html>

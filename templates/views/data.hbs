@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+<style>
+  html {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  #content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  #footer {
+    padding: 20px;
+  }
+</style>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <head>
@@ -10,51 +30,52 @@
 </head>
 
 <body>
-  <section class="hero is-dark is-medium is-bold">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-            </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
+  <div id="content">
+    <section class="hero is-dark is-medium is-bold">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+
+
           </div>
-
-
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </nav>
-    </div>
-
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title">
-          CONTEST_INFO
-        </h1>
-        <h2 class="subtitle">
-          All contests details at one place
-        </h2>
       </div>
-    </div>
+  </div>
+  </div>
+  </div>
+  </nav>
+  </div>
 
-    <!-- Hero footer: will stick at the bottom -->
-    <div class="hero-foot">
-      <nav class="tabs">
-        <div class="container">
-          <ul>
-          </ul>
-        </div>
-      </nav>
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        ENTER YOUR CODEFORCES HANDLE NAME BELOW
+      </h1>
+      <h2 class="subtitle">
+
+      </h2>
     </div>
+  </div>
+
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+    <nav class="tabs">
+      <div class="container">
+        <ul>
+        </ul>
+      </div>
+    </nav>
+  </div>
   </section>
   <br>
   <br>
@@ -68,8 +89,9 @@
   <br>
   <div id="graph"></div>
   <br><br>
+  </div>
 
-  <footer class="hero is-dark is-bold" style="vertical-align: bottom;">
+  <footer class="hero is-dark is-bold" id="footer">
     <br>
     <br>
     <center>
