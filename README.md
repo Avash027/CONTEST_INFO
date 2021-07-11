@@ -1,6 +1,6 @@
 # CONTEST_INFO
 
-### Website : https://contestinfo.herokuapp.com/
+## This project is not hosted anymore
 
 ## Backened
 
